@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Recovery | Professional Vehicle Recovery Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <i class="fas fa-truck-pickup fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Speedy<span class="highlight">Recovery</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About Us</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#quote" class="nav-link quote-btn pulse">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-video-container">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1 class="animate__animated animate__fadeInDown">Fast & Reliable Vehicle Recovery</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Professional roadside assistance anywhere, anytime.</p>
+                <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="#quote" class="btn btn-primary">Get a Quote</a>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Emergency Call</a>
+                </div>
+
+                <div class="search-container animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="search-bar">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Find a service..." id="searchInput">
+                        <div class="search-dropdown">
+                            <div class="dropdown-item" data-value="towing">Towing</div>
+                            <div class="dropdown-item" data-value="jumpstart">Jump Start</div>
+                            <div class="dropdown-item" data-value="flattire">Flat Tire</div>
+                            <div class="dropdown-item" data-value="battery">Battery Replacement</div>
+                            <div class="dropdown-item" data-value="fuel">Fuel Delivery</div>
+                        </div>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Image Slider -->
+        <div class="image-slider-container">
+            <div class="image-slider">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="assets/image1.jpg" alt="Recovery Vehicle">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image2.jpg" alt="Towing Service">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image3.jpg" alt="Roadside Assistance">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image4.jpg" alt="Car Repair">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image5.jpg" alt="Emergency Service">
+                    </div>
+                </div>
+                <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="section-grid">
+                <div class="home-intro" data-aos="fade-right">
+                    <h2 class="section-title">Fast & Reliable Vehicle Recovery</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-description">Stranded on the road? We've got you covered! At Speedy Recovery, we specialize in rapid, professional, and stress-free vehicle recovery services. Day or night, rain or shine – our expert team is just a call away, ensuring you're back on the road safely.</p>
+                    
+                    <div class="key-points">
+                        <div class="key-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Available 24/7</span>
+                        </div>
+                        <div class="key-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Rapid Response</span>
+                        </div>
+                        <div class="key-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Nationwide Coverage</span>
+                        </div>
+                        <div class="key-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional Team</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                </div>
+                
+                <div id="quote" class="booking-form" data-aos="fade-left">
+                    <div class="form-card">
+                        <h2 class="form-title">Get a Free Quote</h2>
+                        
+                        <form id="quoteForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vehicle">Vehicle Type</label>
+                                <input type="text" id="vehicle" name="vehicle" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="towing">Towing – from £60</option>
+                                    <option value="jumpstart">Jump Start – from £60</option>
+                                    <option value="tirechange">Tire Change – from £60</option>
+                                    <option value="fuel">Fuel Delivery – from £60</option>
+                                    <option value="lockout">Lockout – from £60</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location">City/Area</label>
+                                <input type="text" id="location" name="location" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Preferred Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="time">Preferred Time</label>
+                                    <input type="time" id="time" name="time" required>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Request Quote</button>
+                        </form>
+                        
+                        <div class="quote-footer">
+                            <p>Or call us directly for urgent assistance</p>
+                            <a href="tel:+447463753351" class="call-link"><i class="fas fa-phone-alt"></i> +44 123 456 7890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Services</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Professional vehicle recovery and roadside assistance services</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-pickup"></i>
+                    </div>
+                    <h3>Emergency Towing</h3>
+                    <p>Need immediate towing assistance? We're here 24/7 for emergency towing services to get your vehicle to safety.</p>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <div class="service-hover">
+                        <img src="assets/recovery1.jpg" alt="Emergency Towing">
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-battery-three-quarters"></i>
+                    </div>
+                    <h3>Jump Start</h3>
+                    <p>Battery issues? Our jump start service will get you back on the road quickly and safely.</p>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <div class="service-hover">
+                        <img src="assets/recovery2.jpg" alt="Jump Start">
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3>Tire Change</h3>
+                    <p>Flat tire? Our experts will replace it swiftly, so you're not stranded for long.</p>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <div class="service-hover">
+                        <img src="assets/recovery3.jpg" alt="Tire Change">
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <h3>Fuel Delivery</h3>
+                    <p>Ran out of fuel? We deliver fuel directly to your location, so you can get back on your way.</p>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <div class="service-hover">
+                        <img src="assets/recovery4.jpg" alt="Fuel Delivery">
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Vehicle Lockout</h3>
+                    <p>Locked out of your vehicle? Our team can unlock your car quickly and without damage.</p>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <div class="service-hover">
+                        <img src="assets/recovery5.jpg" alt="Vehicle Lockout">
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Accident Recovery</h3>
+                    <p>Been in an accident? We'll safely recover your vehicle and transport it to a repair facility.</p>
+                    <a href="tel:+441234567890" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <div class="service-hover">
+                        <img src="assets/recovery6.jpg" alt="Accident Recovery">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item" data-aos="fade-up">
+                    <i class="fas fa-users"></i>
+                    <div class="counter" data-target="5000">0</div>
+                    <h4>Happy Customers</h4>
+                </div>
+                
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-truck-monster"></i>
+                    <div class="counter" data-target="30">0</div>
+                    <h4>Recovery Vehicles</h4>
+                </div>
+                
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-car"></i>
+                    <div class="counter" data-target="8500">0</div>
+                    <h4>Vehicles Recovered</h4>
+                </div>
+                
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-award"></i>
+                    <div class="counter" data-target="15">0</div>
+                    <h4>Years Experience</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">We provide exceptional service with a dedicated team, available 24/7 for your needs</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast & Reliable</h3>
+                    <p>Quick response and efficient recovery for your needs.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Skilled professionals with years of experience.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Always available when you need us.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Quality service at competitive rates.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Roadside Assistance</h3>
+                    <p>Help available for breakdowns, flat tires, and more.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Your happiness is our priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Read testimonials from our satisfied customers</p>
+            </div>
+            
+            <div class="testimonials-container" data-aos="fade-up">
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Speedy Recovery came to my rescue when I was stranded on the motorway with a flat tire. They arrived quickly and had me back on the road in no time. Excellent service!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>London</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I accidentally locked my keys in my car and was in a panic. Called Speedy Recovery and they were there within 20 minutes. Very professional and reasonably priced. Highly recommend!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Michael Thompson</h4>
+                                    <p>Manchester</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"Used Speedy Recovery for emergency towing after a breakdown. The team was friendly, efficient, and took great care of my vehicle. Will definitely use their services again if needed!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>David Wilson</h4>
+                                    <p>Birmingham</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="testimonial-arrow next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Need Emergency Assistance?</h2>
+                <p>We're available 24/7 to help you with any vehicle recovery or roadside assistance needs.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+447463753351" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <a href="#quote" class="btn btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-text">Speedy<span class="highlight">Recovery</span></span>
+                    </div>
+                    <p>Professional vehicle recovery and roadside assistance services. Available 24/7 for emergencies.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Guidelines</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">License Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Copyright Information</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive updates and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Speedy Recovery. All rights reserved.</p>
+                <div class="language-selector">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="language-dropdown">
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Español</a>
+                        <a href="#">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Floating Action Buttons -->     
+<div class="floating-actions">         
+    <a href="https://wa.me/+447463753351" class="floating-button whatsapp">             
+        <i class="fab fa-whatsapp"></i>             
+        <span class="float-text">WhatsApp</span>         
+    </a>         
+    <a href="https://wa.me/+447454600022" class="floating-button whatsapp">             
+        <i class="fab fa-whatsapp"></i>             
+        <span class="float-text">WhatsApp 2</span>         
+    </a>         
+    <a href="tel:+447454600022" class="floating-button call">             
+        <i class="fas fa-phone-alt"></i>             
+        <span class="float-text">Emergency Call</span>         
+    </a>         
+    <button class="floating-button scroll-top">             
+        <i class="fas fa-arrow-up"></i>         
+    </button>     
+</div>
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-animation">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Quote Request Submitted!</h2>
+            <p>Thank you for your request. We'll contact you shortly with a personalized quote.</p>
+            <button class="btn btn-primary close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
