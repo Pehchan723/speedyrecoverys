@@ -295,7 +295,6 @@ body {
 }
 
 /* ===== HERO SECTION ===== */
-/* ===== HERO SECTION ===== */
 .hero {
     position: relative;
     height: 100vh;
@@ -342,7 +341,7 @@ body {
     color: var(--light-text);
     margin-bottom: 20px;
     /* Add this to ensure proper spacing below the header */
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .hero p {
