@@ -64,3 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Add this JavaScript to your script
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle'); // Your existing menu toggle button
+    const menu = document.querySelector('.mobile-menu'); // Your menu container
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    
+    // This assumes you have existing code that opens the menu
+    // Add close functionality
+    closeMenuBtn.addEventListener('click', function() {
+        menu.classList.remove('active'); // Or however you're toggling menu visibility
+    });
+});
