@@ -32,7 +32,18 @@
                 
                 <div class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
-                    <button id="closeMenuBtn" class="close-menu-btn">×</button>
+                    <!-- Add this inside your mobile menu container -->
+<button id="mobile-menu-close-btn" class="mobile-menu-close-btn">&times;</button>
+
+<!-- Then in your JavaScript, add just the event listener -->
+<script>
+document.getElementById('mobile-menu-close-btn').addEventListener('click', function() {
+  // Your code to close the menu
+  document.querySelector('.mobile-menu-container').style.display = 'none';
+  // OR
+  document.querySelector('.mobile-menu-container').classList.remove('active');
+});
+</script>
                 </div>
                 
                 <<nav class="main-nav">
