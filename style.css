@@ -221,29 +221,6 @@ body {
 .sticky .mobile-menu-toggle {
     color: var(--secondary-color);
 }
-/* CSS for close button */
-.mobile-menu-close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: #333;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  z-index: 9999;
-}
-
-.mobile-menu-close-btn:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
 
 .main-nav {
     display: flex;
