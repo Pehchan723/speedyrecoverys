@@ -336,12 +336,12 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.0rem;
+    font-size: 2.0rem;
     font-weight: 700;
     color: var(--light-text);
     margin-bottom: 20px;
     /* Add this to ensure proper spacing below the header */
-    padding-top: 150px;
+    padding-top: 250px;
 }
 
 .hero p {
