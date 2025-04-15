@@ -64,15 +64,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-// Add this JavaScript to your script
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle'); // Your existing menu toggle button
-    const menu = document.querySelector('.mobile-menu'); // Your menu container
-    const closeMenuBtn = document.getElementById('closeMenuBtn');
+// Assuming you already have code that opens the menu
+// First, let's create a function to add the close button
+
+function addCloseButtonToMobileMenu() {
+  // Get your mobile menu container (adjust selector as needed)
+  const mobileMenuContainer = document.querySelector('.mobile-menu-container');
+  
+  // Check if close button already exists to avoid duplicates
+  if (!document.getElementById('mobile-menu-close-btn')) {
+    // Create close button element
+    const closeButton = document.createElement('button');
+    closeButton.id = 'mobile-menu-close-btn';
+    closeButton.className = 'mobile-menu-close-btn';
+    closeButton.innerHTML = '&times;'; // × symbol
     
-    // This assumes you have existing code that opens the menu
-    // Add close functionality
-    closeMenuBtn.addEventListener('click', function() {
-        menu.classList.remove('active'); // Or however you're toggling menu visibility
+    // Add the button to the menu container
+    mobileMenuContainer.appendChild(closeButton);
+    
+    // Add event listener to close the menu when button is clicked
+    closeButton.addEventListener('click', function() {
+      // This should match however you're currently closing the menu
+      // For example:
+      document.querySelector('.mobile-menu-container').style.display = 'none';
+      // OR
+      document.querySelector('.mobile-menu-container').classList.remove('active');
     });
+  }
+}
+
+// Call this function when your menu opens
+// For example, if you have a menu toggle button:
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  // Your existing code to open the menu
+  
+  // Then add the close button
+  addCloseButtonToMobileMenu();
 });
