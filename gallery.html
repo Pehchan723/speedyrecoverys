@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Speedy Recovery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <i class="fas fa-truck-pickup fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Speedy<span class="highlight">Recovery</span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <button id="closeMenuBtn" class="close-menu-btn">×</button>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                      <li><a href="index.html" class="nav-link">Home</a></li>
+                      <li><a href="about.html" class="nav-link">About Us</a></li>
+                      <li><a href="index.html#services" class="nav-link">Services</a></li>
+                      <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                      <li><a href="index.html#quote" class="nav-link quote-btn pulse">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="gallery-hero-content">
+                <h1 class="animate__animated animate__fadeInDown">Our Recovery Gallery</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">See our team in action with successful recovery operations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Recovery Operations</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Browse through our recent vehicle recovery operations</p>
+            </div>
+
+            <!-- Gallery Filter -->
+            <div class="gallery-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="towing">Towing</button>
+                <button class="filter-btn" data-filter="roadside">Roadside Assistance</button>
+                <button class="filter-btn" data-filter="accident">Accident Recovery</button>
+                <button class="filter-btn" data-filter="transport">Vehicle Transport</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" data-aos="fade-up">
+                <!-- Gallery Items -->
+                <div class="gallery-item towing" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-img-container">
+                        <img src="assets/6.jpg" alt="Towing Service">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Emergency Towing</h3>
+                                <p>Vehicle breakdown on M25</p>
+                                <a href="assets/6.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item roadside" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-img-container">
+                        <img src="/assets/7.jpg" alt="Battery Jump Start">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Jump Start Service</h3>
+                                <p>Dead battery assistance in London</p>
+                                <a href="/assets/7.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item accident" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-img-container">
+                        <img src="/assets/8.jpg" alt="Accident Recovery">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Accident Recovery</h3>
+                                <p>Post-accident vehicle recovery</p>
+                                <a href="/assets/8.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item transport" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-img-container">
+                        <img src="/assets/9.jpg" alt="Vehicle Transport">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Long Distance Transport</h3>
+                                <p>Vehicle transportation from Manchester to London</p>
+                                <a href="/assets/9.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item towing" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-img-container">
+                        <img src="/assets/10.jpg" alt="Flatbed Towing">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Flatbed Towing</h3>
+                                <p>Luxury vehicle recovery</p>
+                                <a href="/assets/10.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item roadside" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-img-container">
+                        <img src="/assets/11.jpg" alt="Tyre Change">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tyre Change</h3>
+                                <p>Roadside tyre replacement</p>
+                                <a href="/assets/11.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item accident" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-img-container">
+                        <img src="/assets/8.jpg" alt="Motorway Recovery">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Motorway Recovery</h3>
+                                <p>Vehicle recovery after collision</p>
+                                <a href="/assets/8.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item transport" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-img-container">
+                        <img src="/assets/12.jpg" alt="Classic Car Transport">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Classic Car Transport</h3>
+                                <p>Specialized transport for vintage vehicles</p>
+                                <a href="/assets/12.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item towing" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-img-container">
+                        <img src="/assets/13.jpg" alt="Off-road Recovery">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Off-road Recovery</h3>
+                                <p>4x4 vehicle recovery from difficult terrain</p>
+                                <a href="/assets/13.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item roadside" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-img-container">
+                        <img src="/assets/14.jpg" alt="Fuel Delivery">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fuel Delivery</h3>
+                                <p>Emergency fuel delivery service</p>
+                                <a href="/assets/14.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item accident" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-img-container">
+                        <img src="/assets/15.jpg" alt="Heavy Vehicle Recovery">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Commercial Vehicle Recovery</h3>
+                                <p>Heavy-duty truck recovery operation</p>
+                                <a href="/assets/15.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item transport" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-img-container">
+                        <img src="/assets/16.jpg" alt="Multiple Vehicle Transport">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Multi-Car Transport</h3>
+                                <p>Transporting multiple vehicles</p>
+                                <a href="/assets/16.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="btn btn-primary load-more-btn">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="gallery-lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="Gallery Image">
+        <div class="lightbox-caption"></div>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Need Emergency Assistance?</h2>
+                <p>We're available 24/7 to help you with any vehicle recovery or roadside assistance needs.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+447463753351" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <a href="index.html#quote" class="btn btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-text">Speedy<span class="highlight">Recovery</span></span>
+                    </div>
+                    <p>Professional vehicle recovery and roadside assistance services. Available 24/7 for emergencies.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Guidelines</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">License Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Copyright Information</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive updates and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2025 SpeedyRecoverys.co.uk All rights reserved.</p>
+                <div class="language-selector">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="language-dropdown">
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Español</a>
+                        <a href="#">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->     
+    <div class="floating-actions">         
+        <a href="https://wa.me/+447463753351" class="floating-button whatsapp">             
+            <i class="fab fa-whatsapp"></i>             
+            <span class="float-text">WhatsApp</span>         
+        </a>         
+        <a href="https://wa.me/+447454600022" class="floating-button whatsapp">             
+            <i class="fab fa-whatsapp"></i>             
+            <span class="float-text">WhatsApp 2</span>         
+        </a>         
+        <a href="tel:+447454600022" class="floating-button call">             
+            <i class="fas fa-phone-alt"></i>             
+            <span class="float-text">Emergency Call +447454600022</span>         
+        </a>         
+        <button class="floating-button scroll-top">             
+            <i class="fas fa-arrow-up"></i>         
+        </button>     
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
